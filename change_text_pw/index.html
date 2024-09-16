@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Password</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/style-footer.css">
+    <link href="css/style1.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style-body.css" rel="stylesheet" type="text/css" media="all"/>
+    
+    
+    
+    <script>
+            // pw check
+		function validate()
+		{
+			var password=document.forms["pass"]["new"].value;
+			var repassword=document.forms["pass"]["re-new"].value;		
+
+			if(password!=repassword)
+			{
+				alert("Passwords do not match!");return false;
+			}
+
+			else
+			return true;
+		}
+    </script>
+
+    <style type="text/css">
+	   .button {
+		   display: inline-block;
+		   background-color:#fed136;
+		   border: none;
+		   border-radius: 15px;
+		   outline: none;
+		   cursor: pointer;
+		   box-shadow: 0 9px #999;
+		   color:#ffffcc;
+		   padding: 20px 37px;
+		   text-align: center;
+		   margin: 4px 2px;
+		   font-size: 24px
+		 }
+		 .button:hover {background-color: #fec91b;}
+		 .button:active {
+		   background-color: #fec301;
+		   box-shadow: 0 5px #666;
+		   transform: translateY(4px);
+		 }
+
+        .txt3 {
+            font-family: Poppins-Regular;
+            font-size: 16px;
+            color: #666666;
+            line-height: 1.4;
+            }
+
+        .hov1:hover {
+            color: #fec301;
+        }
+
+   </style>
+    
+</head>
+
+<body>
+
+<!-- validate text pw -->
+        <div class="signupform">
+                <div class="container">
+                    <div class="agile_info">
+                        <div class="login_form">
+                            <div class="left_grid_info">
+                                <h1>Textual Password Change</h1>
+                                <p>Change Previous Password.</p><br>
+                                <img class="im1" src="../images/cover.jpg" height="270" width="370">
+                            </div>
+                        </div>
+                        <div class="login_info">
+                                <h2>Update Text Password</h2>
+                                <p>Enter following details to change your text password.</p>
+                                <form name="pass" action="change_pw.php" method="post" onsubmit="return validate();">
+                                    <label>Old Password</label>
+                                    <div class="input-group">
+                                        <span class="fa fa-lock" style="color:#fed136;"></span>
+                                        <input type ="Password" name="old" placeholder="Enter Old Text Password" required=""> 
+                                    </div>
+                                    <label>New Password</label>
+                                    <div class="input-group">
+                                        <span class="fa fa-lock" style="color:#fed136;"></span>
+                                        <input type="Password" name="new" placeholder="Enter New Password" required="">
+                                    </div> 
+                                    <label>Re-Enter New Password</label>
+                                    <div class="input-group">
+                                        <span class="fa fa-lock" style="color:#fed136;"></span>
+                                        <input type="Password" name="re-new" placeholder="Enter New Password Again" required="">
+                                    </div> 
+                                    <p class="account1">All Fields are compulsory</p>
+                                        <button class="button" type="submit" name="submit">Update</button >                
+                                </form><br>
+                      <a href="../user/user.php" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+                          Return to your Profile
+                          <i class="fa fa-long-arrow-right m-l-5"></i>
+                      </a>
+                </div>
+          </div>
+    </div>     
+</div>
+
+<script src="plugins/jquery.js"></script>
+<script src="plugins/bootstrap.min.js"></script>
+<script src="plugins/bootstrap-select.min.js"></script>
+
+<script src="plugins/validate.js"></script>
+<script src="plugins/wow.js"></script>
+<script src="plugins/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
+
