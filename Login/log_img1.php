@@ -102,7 +102,7 @@ ob_start();
 				<img class="im" src="..\images\pw\image5.jpg" onclick="changeIt(this)" height="120" width="120">
 				</center>
 			</div>
-				<div><a href="..\change_graphicalpw">Forgot Your graphical password?</a></div>
+				<div><a href="..\update_GausX">Forgot Your graphical password?</a></div>
 		</div>
 	</div>
 
