@@ -127,7 +127,7 @@ $result=mysqli_query($con,"select username,name,email,phone,userimage from user 
 						<span class="label-input100">Update Passwords</span>
 						<h4 class="input100">
               <a href="../update_GausX/index.html"  style="color:#001a00">Change Graphical Password</a><br>
-              <a href="../change_text_pw/index.html"  style="color:#001a00">Change Text Password</a><br>
+              <a href="../update_TXpassword/index.html"  style="color:#001a00">Change Text Password</a><br>
             </h4>
 						<span class="focus-input100"></span>
 					</div>
