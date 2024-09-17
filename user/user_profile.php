@@ -98,7 +98,7 @@ $result=mysqli_query($con,"select username,name,email,phone,userimage from user 
 			<div class="login_info">
 				<a href="../update_GausX/check_textpw.html">Change Graphical Password</a><br><br><br>
 				<a href="../update_TXpassword/change_pw.html">Change Text Password</a><br><br><br>
-				<a href="../update_DisplayPicture/change_profile_pic.html">Change Profile Picture</a><br><br><br>
+				<a href="../update_DisplayPicture/update_dp.html">Change Profile Picture</a><br><br><br>
 				<a href="../update_Profile/change_profile_info.html">Change Profile Details</a><br><br><br><br><br>
 				<button class="btn btn-danger btn-block" type="button" onclick="window.location.href = 'logout.php'">Logout</button>
 			</div>
