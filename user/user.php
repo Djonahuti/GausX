@@ -117,7 +117,7 @@ $result=mysqli_query($con,"select username,name,email,phone,userimage from user 
 					<div class="wrap-input100 validate-input">
 						<span class="label-input100">Update Profile</span>
 						<h4 class="input100">
-				      <a href="../change_profilepic/index.html" style="color:#001a00">Change Profile Picture</a><br>
+				      <a href="../update_DisplayPicture/index.html" style="color:#001a00">Change Profile Picture</a><br>
 				      <a href="../change_user_details/index.html"  style="color:#001a00">Change Profile Details</a><br><br><br>
             </h4>
 						<span class="focus-input100"></span>
